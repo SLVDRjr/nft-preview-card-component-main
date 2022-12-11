@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  
+  display: grid;
+  place-content: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.outer__bg {
+  position: relative;
+  background-color: hsl(216, 54%, 12%);
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.outer__bg::after {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  content: '';
+  height: calc(100% - 3rem);
+  width: calc(100% - 2rem);
+  background-color: hsl(217, 54%, 11%);
+  border-radius: 2rem;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  max-width: 320px;
+  padding: 1rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+img.card__hero-image {
+  border-radius: 0.5rem;
+}
+
+h1 {
+  font-size: 1.11rem;
+}
+
+h2 {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.card__stats {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+
+.card__stats div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+p.cyan {
+  color: hsl(215, 32%, 27%);
+  font-size: 0.88rem;
+}
+
+p.blue {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.88rem;
+}
+
+div.avatar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.avatar img {
+  width: 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+div.avatar p {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.88rem;
+}
+
+span {
+  color: white;
+}
+
+
